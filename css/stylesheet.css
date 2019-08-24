@@ -2817,3 +2817,51 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .ui-menu .ui-menu-divider {
   display: none;
 }
+
+/* Qasim's UI changes */
+.send-receive-money {
+	
+}
+
+.input-group.has-inline-header > span.inline-header {
+  position: absolute;
+  z-index: 10;
+  left: 15px;
+  color: #888;
+}
+
+.input-group.has-inline-header > span.inline-header > strong {
+  color: #777;
+}
+
+.input-group.has-inline-header > .form-control {
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+
+.send-receive-money form > .form-group {
+  margin-bottom: 0;
+  
+}
+
+.send-receive-money form > .form-group > .input-group > input, .send-receive-money form > .form-group > .input-group > .input-group-append > .input-group-text {
+  border-bottom: 0 !important;
+  border-radius: 0;
+}
+
+.send-receive-money form > .form-group:last-of-type > .input-group > input, .send-receive-money form > .form-group:last-of-type > .input-group > .input-group-append > .input-group-text {
+  border-bottom: 1px solid #ced4da;
+}
+
+.content {
+  padding: .810rem .96rem;
+  border: 1px solid #ced4da;
+  border-bottom: 0;
+}
+
+.content:last-of-type {
+  border-bottom: 1px solid #ced4da;
+  padding: .810rem .96rem;
+}
+
+/* Qasim's UI changes END */
