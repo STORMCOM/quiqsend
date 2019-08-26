@@ -110,7 +110,7 @@
           <div class="send-receive-money col-lg-6 col-xl-5 my-auto">
             <ul class="nav nav-tabs nav-justified bg-white style-5 rounded-top" id="myTab" role="tablist">
               <li class="nav-item"> <a class="nav-link active" id="send-money-tab" data-toggle="tab" href="#send-money" role="tab" aria-controls="send-money" aria-selected="true">Send Money</a> </li>
-              <li class="nav-item"> <a class="nav-link" id="receive-money-tab" data-toggle="tab" href="#receive-money" role="tab" aria-controls="receive-money" aria-selected="false">Receive Money</a> </li>
+              <li class="nav-item"> <a class="nav-link" id="receive-money-tab" data-toggle="tab" href="#receive-money" role="tab" aria-controls="receive-money" aria-selected="false">Send Airtime/Data</a> </li>
             </ul>
             <div class="tab-content p-4 bg-white rounded-bottom" id="myTabContent">
               <div class="tab-pane fade show active" id="send-money" role="tabpanel" aria-labelledby="send-money-tab">
@@ -184,7 +184,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="input-group has-inline-header">
+                    <div class="recepient input-group has-inline-header">
                       <span class="inline-header">
                         Recepient gets in <strong>Bangladesh</strong>
                       </span>
@@ -251,6 +251,9 @@
                         </span> </div>
                     </div>
                   </div>
+                  <div class="content rate">
+                    Rate <strong>1 AUD = 59.10 BDT</strong>
+                  </div>
                   <div class="content">
                     <div class="input-group ">
                      <div class="w-100">
@@ -269,6 +272,15 @@
                         <span class="delivery-time float-right font-weight-500">2-3 business days</span>
                       </div>
                     </div>
+                  </div>
+                  
+                  <div class="content pay-us-with">
+                    Pay us with: 
+                    <select name="pay-us-with" id="pay-us-with" class="styled">
+                      <option value="bank-transfer" data-fee="3.95">Poli</option>
+                      <option value="PayID" data-fee="0">PayID</option>
+                      <option value="internet-bank-transfer" data-fee="1.95">Internet Bank Transfer</option>
+                    </select>
                   </div>
                   <div class="form-group content">
                     <div class="clearfix">

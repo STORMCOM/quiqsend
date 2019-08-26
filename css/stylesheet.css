@@ -2864,4 +2864,30 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   padding: .810rem .96rem;
 }
 
+.send-receive-money .input-group-text {
+  width: 110px;
+  background-color: #fff;
+}
+
+.send-receive-money .recepient .form-control, .send-receive-money .recepient .input-group-text {
+  border-top: 0;
+}
+
+.send-receive-money .input-group.has-inline-header > input {
+  font-weight: 500;
+  color: #4c4d4d;
+}
+
+.send-receive-money .rate.content {
+  border-top: 0;
+}
+
+.send-receive-money select {
+      border:0px;
+    outline:0px;
+    background-color:white;
+    background:none;
+    -webkit-appearance:none;
+    appearance:none;
+}
 /* Qasim's UI changes END */
