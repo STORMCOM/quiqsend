@@ -2819,15 +2819,24 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 }
 
 /* Qasim's UI changes */
-.send-receive-money {
-	
-}
 
 .input-group.has-inline-header > span.inline-header {
   position: absolute;
   z-index: 10;
   left: 15px;
   color: #888;
+}
+
+@media (max-width: 500px) {
+  .input-group.has-inline-header > span.inline-header {
+    font-size: 0.8em; 
+  }
+}
+
+@media (max-width: 400px) {
+  .input-group.has-inline-header > span.inline-header {
+    font-size: 0.6em; 
+  }
 }
 
 .input-group.has-inline-header > span.inline-header > strong {
@@ -2841,7 +2850,6 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 
 .send-receive-money form > .form-group {
   margin-bottom: 0;
-  
 }
 
 .send-receive-money form > .form-group > .input-group > input, .send-receive-money form > .form-group > .input-group > .input-group-append > .input-group-text {
@@ -2881,6 +2889,52 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .send-receive-money .rate.content {
   border-top: 0;
 }
+.table-cell {
+  display: table-cell;
+}
+
+.table {
+  display: table;
+  width: 100%;
+}
+
+.quiqsend {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.quiqsend.dropdown > button, .quiqsend.dropdown > button:hover{
+  box-shadow: none;
+  position: relative;
+}
+
+.quiqsend.dropdown > button:after, .custom-select:after {
+  border-left: 6px solid transparent !important;
+  border-right: 6px solid transparent !important;
+  border-top: 6px solid black !important;
+  position: absolute;
+  top: 20px;
+  right: 13px;
+  margin-top: 0 !important;
+}
+
+.quiqsend.dropdown > button:before, .custom-select:before {
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid white;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    z-index: 10;
+}
 
 .send-receive-money select {
       border:0px;
@@ -2890,4 +2944,9 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     -webkit-appearance:none;
     appearance:none;
 }
+
+.custom-select {
+  background: none;
+}
+
 /* Qasim's UI changes END */

@@ -110,7 +110,7 @@
           <div class="send-receive-money col-lg-6 col-xl-5 my-auto">
             <ul class="nav nav-tabs nav-justified bg-white style-5 rounded-top" id="myTab" role="tablist">
               <li class="nav-item"> <a class="nav-link active" id="send-money-tab" data-toggle="tab" href="#send-money" role="tab" aria-controls="send-money" aria-selected="true">Send Money</a> </li>
-              <li class="nav-item"> <a class="nav-link" id="receive-money-tab" data-toggle="tab" href="#receive-money" role="tab" aria-controls="receive-money" aria-selected="false">Send Airtime/Data</a> </li>
+              <li class="nav-item"> <a class="nav-link" id="receive-money-tab" href="/send-airtime.html" role="tab" aria-controls="receive-money" aria-selected="false">Send Airtime/Data</a> </li>
             </ul>
             <div class="tab-content p-4 bg-white rounded-bottom" id="myTabContent">
               <div class="tab-pane fade show active" id="send-money" role="tabpanel" aria-labelledby="send-money-tab">
@@ -252,18 +252,34 @@
                     </div>
                   </div>
                   <div class="content rate">
-                    Rate <strong>1 AUD = 59.10 BDT</strong>
+                    Rate <strong>1 AUD = 1 BDT</strong>
                   </div>
-                  <div class="content">
-                    <div class="input-group ">
-                     <div class="w-100">
-                      <span class="float-left">Delivery Method:</span>
+                  <div class="content position-relative">
+                    <div class="">
+                     <div class="w-100 ">
+                      <span class="table-cell">Delivery Method:</span>
+<!--
                       <select class="float-right">
                         <option class='delivery-method' selected>Bank Deposit</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
+-->
+                     
+                        <div class=" dropdown quiqsend table-cell">
+                          <input name="pay-us-with" value="poli" type="hidden">
+                          <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Bank Deposit
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" data-value="poli" data-fee="3.95">Bank Deposit</a>
+                            <a class="dropdown-item" href="#" data-value="PayID" data-fee="0">Cash Pickup</a>
+                            <a class="dropdown-item" href="#" data-value="internet-bank-transfer" data-fee="1.95">bKash</a>
+                            <a class="dropdown-item" href="#" data-value="internet-bank-transfer" data-fee="1.95">Ezy Local Deposit</a>
+                            <a class="dropdown-item" href="#" data-value="internet-bank-transfer" data-fee="1.95">Urgent Local Deposit</a>
+                          </div>
+                        </div>
                       </div>
                       
                       <div class="w-100 mt-2 clearfix">
@@ -274,13 +290,20 @@
                     </div>
                   </div>
                   
-                  <div class="content pay-us-with">
-                    Pay us with: 
-                    <select name="pay-us-with" id="pay-us-with" class="styled">
-                      <option value="bank-transfer" data-fee="3.95">Poli</option>
-                      <option value="PayID" data-fee="0">PayID</option>
-                      <option value="internet-bank-transfer" data-fee="1.95">Internet Bank Transfer</option>
-                    </select>
+                  <div class="content pay-us-with position-relative">
+                    <span class="table-cell"> Pay us with: </span>
+
+                    <div class="dropdown quiqsend table-cell">
+                      <input name="pay-us-with" value="poli" type="hidden">
+                      <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Poli
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" data-value="poli" data-fee="3.95">Poli <span>$3.95</span></a>
+                        <a class="dropdown-item" href="#" data-value="PayID" data-fee="0">PayID <span>$0.00</span></a>
+                        <a class="dropdown-item" href="#" data-value="internet-bank-transfer" data-fee="1.95">Internet Bank Transfer <span>$1.95</span></a>
+                      </div>
+                    </div>
                   </div>
                   <div class="form-group content">
                     <div class="clearfix">
@@ -293,7 +316,8 @@
                     </div>
                   </div>
                   
-                  <button class="btn btn-primary btn-block mt-4">Continue</button>
+                  <button type="submit" class="w-50 btn btn-primary d-inline-block mt-4">Send Now</button>
+                  <a href="#" class="w-45 float-right btn btn-secondary d-inline-block mt-4">Compare</a>
                 </form>
               </div>
               <div class="tab-pane fade show" id="receive-money" role="tabpanel" aria-labelledby="receive-money-tab">
