@@ -188,7 +188,7 @@
                       <span class="inline-header">
                         Recepient gets in <strong>Bangladesh</strong>
                       </span>
-                      <input type="text" class="form-control" data-bv-field="recipientGets" id="recipientGets" value="1,410.06" placeholder="">
+                      <input type="text" class="form-control" data-bv-field="recipientGets" id="recipientGets" value="1000.00" placeholder="">
                       <div class="input-group-append"> <span class="input-group-text p-0">
                         <select id="recipientCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" required="">
                           <optgroup label="Popular Currency">
@@ -721,5 +721,19 @@
 <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script> 
 <script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
 <script src="js/theme.js"></script>
+<script>
+$(document).ready(function(){
+  // currency calculator
+  
+  $('.input-group.has-inline-header .bootstrap-select > select').on('change', function(event){
+    let firstCurrency = $('.input-group.has-inline-header .bootstrap-select:first > select')[0];
+    let secondCurrency = $('.input-group.has-inline-header .bootstrap-select:last > select')[0];
+    let firstCurrencyName = firstCurrency.options[firstCurrency.selectedIndex].text;
+    let secondCurrencyName = secondCurrency.options[secondCurrency.selectedIndex].text;
+    
+    $('.content.rate > strong').text(`1 ${firstCurrencyName} = 1 ${secondCurrencyName}`)
+  })
+})
+</script>
 </body>
 </html>
