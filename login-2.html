@@ -17,52 +17,68 @@
 ============================================= -->
 <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap-select/css/bootstrap-select.css" />
+<link rel="stylesheet" type="text/css" href="vendor/currency-flags/css/currency-flags.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 </head>
 <body>
 
 <!-- Preloader -->
-<div id="preloader">
+<!--
+<div id="preloader ">
   <div data-loader="dual-ring"></div>
 </div>
-<!-- Preloader End -->
+-->
+<!-- Preloader End --> 
 
-<div id="main-wrapper" class="h-100">
-  <div class="container h-100">
-    <!-- Login Form
-    ============================================= -->
-    <div class="row no-gutters h-100">
-      <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4 m-auto">
-        <div class="logo mb-4 text-center"> <a href="index.html" title="Payyed - HTML Template"><img src="images/logo.png" alt="Payyed"></a> </div>
-        <form id="loginForm" method="post">
-          <div class="vertical-input-group">
-            <div class="input-group">
-              <input type="email" class="form-control" id="emailAddress" required placeholder="Your Email">
-            </div>
-            <div class="input-group">
-              <input type="password" class="form-control" id="loginPassword" required placeholder="Password">
-            </div>
-          </div>
-          <button class="btn btn-primary btn-block shadow-none my-4" type="submit">Login</button>
-        </form>
-        <p class="text-3 text-center text-muted">Don't have an account? <a class="btn-link" href="signup-2.html">Sign Up</a></p>
-        <p class="text-center"><a class="btn-link" href="#">Forgot Password?</a></p>
-      </div>
-      <div class="col-12 fixed-bottom">
-        <p class="text-center text-1 text-muted mb-1">Copyright © 2019 <a href="#">Payyed</a>. All Rights Reserved.</p>
+<!-- Document Wrapper   
+============================================= -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================================= -->
+  <header id="header" class="bg-light header-text">
+    <div class="container">
+      <div class="header-row">
+        <div class="header-column justify-content-start"> 
+          <!-- Logo
+          ============================= -->
+          <div class="logo"> <a class="d-flex" href="index.html" title="Payyed - HTML Template">
+          <img src="images/logo-light.png" alt="Payyed" /></a> </div>
+          <!-- Logo end --> 
+          <!-- Collapse Button
+          ============================== -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav"> <span></span> <span></span> <span></span> </button>
+          <!-- Collapse Button end --> 
+          
+          <!-- Primary Navigation
+          ============================== -->
+          
+          <!-- Primary Navigation end --> 
+        </div>
+        
       </div>
     </div>
-    <!-- Login Form End -->
-  </div>
+  </header>
+  <section class="text-center mt-5">
+    <h3>To login, check your email</h3>
+    <i class="far fa-envelope-open h1 text-primary mt-3 mb-3"></i>
+    <p>For security, we've sent you an email, at <strong>crazoz420@gmail.com</strong>. <br>Simply click the link in the email and you'll be all set.</p>
+    
+    <br>
+    
+    <span>Didn't get the email?</span> <a href="#">Send it again.</a>
+  </section>
+  
 </div>
-
-<!-- Back to Top
-============================================= --> 
-<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+<!-- Document Wrapper end --> 
 
 <!-- Script --> 
 <script src="vendor/jquery/jquery.min.js"></script> 
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script> 
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
 <script src="js/theme.js"></script>
 </body>
 </html>

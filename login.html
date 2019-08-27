@@ -21,12 +21,6 @@
 </head>
 <body>
 
-<!-- Preloader -->
-<div id="preloader">
-  <div data-loader="dual-ring"></div>
-</div>
-<!-- Preloader End -->
-
 <div id="main-wrapper" class="h-100">
   <div class="container-fluid px-0 h-100">
     <div class="row no-gutters h-100">
@@ -39,13 +33,13 @@
           <div class="hero-content mx-auto w-100 h-100 d-flex flex-column">
             <div class="row no-gutters">
               <div class="col-10 col-lg-9 mx-auto">
-                <div class="logo mt-5 mb-5 mb-md-0"> <a class="d-flex" href="index.html" title="Payyed - HTML Template"><img src="images/logo-light.png" alt="Payyed"></a> </div>
+<!--                <div class="logo mt-5 mb-5 mb-md-0"> <a class="d-flex" href="index.html" title="Payyed - HTML Template"><img src="images/logo-light.png" alt="Payyed"></a> </div>-->
               </div>
             </div>
               <div class="row no-gutters my-auto">
                 <div class="col-10 col-lg-9 mx-auto">
-                  <h1 class="text-11 text-white mb-4">Welcome back!</h1>
-                  <p class="text-4 text-white line-height-4 mb-5">We are glad to see you again! Instant deposits, withdrawals & payouts trusted by millions worldwide.</p>
+<!--                  <h1 class="text-11 text-white mb-4">Welcome back!</h1>-->
+<!--                  <p class="text-4 text-white line-height-4 mb-5">We are glad to see you again! Instant deposits, withdrawals & payouts trusted by millions worldwide.</p>-->
                 </div>
               </div>
           </div>
@@ -59,28 +53,37 @@
         <div class="container my-4">
           <div class="row">
             <div class="col-11 col-lg-9 col-xl-8 mx-auto">
-              <h3 class="font-weight-400 mb-4">Log In</h3>
-              <form id="loginForm" method="post">
+             <a class="d-block text-center" href="index.html" title="Payyed - HTML Template"><img src="images/logo-light.png" alt="Payyed"></a>
+             <br>
+              <h3 class="font-weight-400 mb-2 text-center">Welcome back.</h3>
+              <p class="text-center mb-4">New to QuiqSend? <a href="signup.html">Sign up</a></p>
+              <form id="loginForm" method="post" action="index.html">
                 <div class="form-group">
-                  <label for="emailAddress">Email Address</label>
-                  <input type="email" class="form-control" id="emailAddress" required placeholder="Enter Your Email">
+                  <input type="email" class="form-control" id="emailAddress" required placeholder="Your email address">
                 </div>
                 <div class="form-group">
-                  <label for="loginPassword">Password</label>
-                  <input type="password" class="form-control" id="loginPassword" required placeholder="Enter Password">
+                  <input type="password" class="form-control" id="loginPassword" required placeholder="Your password">
                 </div>
-                <div class="row">
+<!--                <button class="btn btn-primary btn-block my-4" type="submit">Log in</button>-->
+               <a href="login-2.html" class="btn btn-primary btn-block my-4" >Log in</a>
+                <div class="row mb-4">
                   <div class="col-sm">
                     <div class="form-check custom-control custom-checkbox">
                       <input id="remember-me" name="remember" class="custom-control-input" type="checkbox">
-                      <label class="custom-control-label" for="remember-me">Remember Me</label>
+                      <label class="custom-control-label" for="remember-me">Remember this device</label>
                     </div>
                   </div>
                   <div class="col-sm text-right"><a class="btn-link" href="#">Forgot Password ?</a></div>
                 </div>
-                <button class="btn btn-primary btn-block my-4" type="submit">Login</button>
+                <a href="#" class="btn btn-sm btn-secondary btn-block">
+                <i class="fab fa-facebook-square float-left"></i>
+                Connect with Facebook</a>
+                <a href="#" class="btn btn-sm btn-secondary btn-block">
+                <i class="fab fa-google float-left"></i>
+                Connect with Google</a>
+                
               </form>
-              <p class="text-3 text-center text-muted">Don't have an account? <a class="btn-link" href="signup.html">Sign Up</a></p>
+              
             </div>
           </div>
         </div>

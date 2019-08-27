@@ -2911,6 +2911,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .quiqsend.dropdown > button, .quiqsend.dropdown > button:hover{
   box-shadow: none;
   position: relative;
+  min-width: 160px;
 }
 
 .quiqsend.dropdown > button:after, .custom-select:after {
