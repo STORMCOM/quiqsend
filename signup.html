@@ -17,7 +17,10 @@
 ============================================= -->
 <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/currency-flags/css/currency-flags.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap-select/css/bootstrap-select.css">
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
 </head>
 <body>
 
@@ -57,19 +60,19 @@
               <h3 class="text-center font-weight-400 mb-4 mt-4">Welcome to money without borders.</h3>
               <form id="loginForm" method="post">
                 <div class="form-group">
-                    <label for="youSend">You Send</label>
+                    
                     <div class="input-group">
                       <div class="input-group-prepend"> <span class="input-group-text p-0">
                         <div class="dropdown bootstrap-select form-control bg-transparent"><select id="youSendCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" required="" tabindex="-98">
-                          <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States dollar" selected="selected" value="">USD</option>
-                          <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
-                          <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="">INR</option>
+                          <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States" selected="selected" value="">+1</option>
+                          <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australia" value="">+61</option>
+                          <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="India" value="">+91</option>
                           
-                          <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates dirham" value="">AED</option>
+                          <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates" value="">+971</option>
                           <option data-icon="currency-flag currency-flag-ars mr-1" data-subtext="Argentine peso" value="">ARS</option>
                           <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
-                          <option data-icon="currency-flag currency-flag-bdt mr-1" data-subtext="Bangladeshi taka" value="">BDT</option>
-                          <option data-icon="currency-flag currency-flag-bgn mr-1" data-subtext="Bulgarian lev" value="">BGN</option>
+                          <option data-icon="currency-flag currency-flag-bdt mr-1" data-subtext="Bangladesh" value="">+880</option>
+                          <option data-icon="currency-flag currency-flag-bgn mr-1" data-subtext="Bulgaria" value="">BGN</option>
                           <option data-icon="currency-flag currency-flag-brl mr-1" data-subtext="Brazilian real" value="">BRL</option>
                           <option data-icon="currency-flag currency-flag-cad mr-1" data-subtext="Canadian dollar" value="">CAD</option>
                           <option data-icon="currency-flag currency-flag-chf mr-1" data-subtext="Swiss franc" value="">CHF</option>
@@ -113,14 +116,13 @@
                           <option data-icon="currency-flag currency-flag-ugx mr-1" data-subtext="Ugandan shilling" value="">UGX</option>
                           <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnamese dong" value="">VND</option>
                           <option data-icon="currency-flag currency-flag-zar mr-1" data-subtext="South African rand" value="">ZAR</option>
-                        </select><button type="button" class="btn dropdown-toggle custom-select bg-transparent border-0 bs-placeholder" data-toggle="dropdown" role="button" data-id="youSendCurrency" title="USD"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner"><i class=" currency-flag currency-flag-usd mr-1"></i>&nbsp;USD</div></div> </div></button><div class="dropdown-menu " role="combobox"><div class="bs-searchbox"><input type="text" class="form-control" autocomplete="off" role="textbox" aria-label="Search"></div><div class="inner show" role="listbox" aria-expanded="false" tabindex="-1"><ul class="dropdown-menu inner show"></ul></div></div></div>
+                        </select></div>
                         </span> </div>
-                        <input type="text" class="form-control" data-bv-field="youSend" id="youSend" value="1,000" placeholder="">
+                        <input type="text" class="form-control" data-bv-field="phone-number" placeholder="Enter your mobile number" id="youSend" value="" >
                     </div>
                   </div>
                 
                 <div class="form-group">
-                  <label for="loginPassword">Password</label>
                   <input type="password" class="form-control" id="loginPassword" required placeholder="Create a password">
                 </div>
                 <button class="btn btn-primary btn-block my-4" type="submit">Signup</button>
@@ -142,6 +144,7 @@
 <!-- Script -->
 <script src="vendor/jquery/jquery.min.js"></script> 
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
 <script src="js/theme.js"></script>
 </body>
 </html>
