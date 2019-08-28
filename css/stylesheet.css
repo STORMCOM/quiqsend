@@ -2954,4 +2954,17 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   background: none;
 }
 
+.sign-up .nav-tabs .nav-link {
+  padding: 0.5rem 10px;
+}
+
+.sign-up .nav-tabs .nav-link.active {
+  background-color: #00a1ff;
+  color: white;
+}
+
+.sign-up .nav-tabs .nav-item .nav-link.active:after {
+  background-color: #75caff;
+}
+
 /* Qasim's UI changes END */
