@@ -2946,6 +2946,10 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     appearance:none;
 }
 
+.send-receive-money .dropdown-menu {
+  min-width: 250px;
+}
+
 .custom-select {
   background: none;
 }

@@ -202,15 +202,15 @@
                   <div class="content pay-us-with position-relative">
                     <span class="table-cell"> Pay us with: </span>
 
-                    <div class="dropdown quiqsend table-cell">
+                    <div class="dropdown pay-us-with quiqsend table-cell">
                       <input name="pay-us-with" value="poli" type="hidden">
                       <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Poli
                       </button>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#" data-value="poli" data-fee="3.95">Poli <span>$3.95</span></a>
-                        <a class="dropdown-item" href="#" data-value="PayID" data-fee="0">PayID <span>$0.00</span></a>
-                        <a class="dropdown-item" href="#" data-value="internet-bank-transfer" data-fee="1.95">Internet Bank Transfer <span>$1.95</span></a>
+                        <a class="dropdown-item" href="#" data-value="poli" data-fee="3.95">Poli <span class="text-primary float-right">$3.95</span></a>
+                        <a class="dropdown-item" href="#" data-value="PayID" data-fee="0">PayID <span class="text-primary float-right">$0.00</span></a>
+                        <a class="dropdown-item" href="#" data-value="internet-bank-transfer" data-fee="1.95">Internet Bank Transfer <span class="text-primary float-right">$1.95</span></a>
                       </div>
                     </div>
                   </div>
@@ -573,6 +573,7 @@ $(document).ready(function(){
   
   // Populating delivery methods, when the recepient currency field is set
   $(secondCurrency).on('change', function(event){
+    event.preventDefault();
     
     var selectedCurrency = secondCurrency.options[secondCurrency.selectedIndex].text;
     
@@ -598,6 +599,7 @@ $(document).ready(function(){
   
   // Delivery method change-handler
   $('.delivery-method > .dropdown-menu').on('click', 'a', function(event){
+    event.preventDefault();
     $('.delivery-time').text( $(event.currentTarget).data('time'));
     $('.delivery-method > button').text( $(event.currentTarget).contents()[0].nodeValue.trim() )
     
