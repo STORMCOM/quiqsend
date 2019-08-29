@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="images/favicon.png" rel="icon" />
+<title>Payyed - Money Transfer and Online Payments HTML Template</title>
+<meta name="description" content="This professional design html template is for build a Money Transfer and online payments website.">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Web Fonts
+============================================= -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i' type='text/css'>
+
+<!-- Stylesheet
+============================================= -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap-select/css/bootstrap-select.css" />
+<link rel="stylesheet" type="text/css" href="vendor/currency-flags/css/currency-flags.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<!--
+<div id="preloader ">
+  <div data-loader="dual-ring"></div>
+</div>
+-->
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+============================================= -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================================= -->
+  <header id="header" class="bg-light header-text">
+    <div class="container">
+      <div class="header-row">
+        <div class="header-column justify-content-start"> 
+          <!-- Logo
+          ============================= -->
+          <div class="logo"> <a class="d-flex" href="index.html" title="Payyed - HTML Template">
+          <img src="images/logo-light.png" alt="Payyed" /></a> </div>
+          <!-- Logo end --> 
+          <!-- Collapse Button
+          ============================== -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav"> <span></span> <span></span> <span></span> </button>
+          <!-- Collapse Button end --> 
+          
+          <!-- Primary Navigation
+          ============================== -->
+          <nav class="primary-menu navbar navbar-expand-lg">
+            <div id="header-nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+              	
+                <li class="dropdown"> <a class="dropdown-toggle" href="#">Money Transfer</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Send Money</a></li>
+                    <li><a class="dropdown-item" href="receive-money.html">Receive Money</a></li>
+                    <li><a class="dropdown-item" href="rate-alert.html">Wish Rate Alert</a></li>
+                  </ul>
+                </li>
+                <li><a href="help.html">Airtime/Data Topup</a></li>
+                <li><a href="help.html">Utility Connection</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Primary Navigation end --> 
+        </div>
+        <div class="header-column justify-content-end"> 
+          <!-- Login & Signup Link
+          ============================== -->
+          <nav class="login-signup navbar navbar-expand">
+            <ul class="navbar-nav">
+              <li><a href="login.html">Login</a> </li>
+              <li class="align-items-center h-auto ml-sm-3"><a class="btn btn-primary d-none d-sm-block" href="signup.html">Sign Up</a></li>
+            </ul>
+          </nav>
+          <!-- Login & Signup Link end --> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================================= -->
+  
+   <div class="container">
+     <nav aria-label="breadcrumb w100">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page"><a href="send-1.html">Amount</a></li>
+          <li class="breadcrumb-item active">You</li>
+          <li class="breadcrumb-item active">Recipient</li>
+          <li class="breadcrumb-item active">Review</li>
+          <li class="breadcrumb-item active">Pay</li>
+        </ol>
+      </nav>  
+   </div>
+   
+  <div id="content">
+  
+  <div class="row">
+  
+    <div class="container my-5">
+
+        <div class="send-receive-money col-lg-6 col-xl-5 my-auto margin-center">
+          <ul class="nav nav-tabs nav-justified bg-white style-5 rounded-top" id="myTab" role="tablist">
+            <li class="nav-item"> <a class="nav-link active" id="send-money-tab" data-toggle="tab" href="#send-money" role="tab" aria-controls="send-money" aria-selected="true">Send Money</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="receive-money-tab" href="/send-airtime.html" role="tab" aria-controls="receive-money" aria-selected="false">Send Airtime/Data</a> </li>
+          </ul>
+          <div class="tab-content p-4 bg-white rounded-bottom" id="myTabContent">
+            <div class="tab-pane fade show active" id="send-money" role="tabpanel" aria-labelledby="send-money-tab">
+              <form id="form-send-money" method="post">
+                <div class="form-group">
+                  <div class="input-group has-inline-header">
+                    <span class="inline-header">
+                      You send from <strong>Australia</strong>
+                    </span>
+                    <input type="number" class="form-control" data-bv-field="youSend" id="youSend" value="1000.00" placeholder="">
+                    <div class="input-group-append"> <span class="input-group-text p-0">
+                      <select id="youSendCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" required="">
+                        <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" selected="selected" value="">AUD</option>
+                        <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="">INR</option>
+                        <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates dirham" value="">AED</option>
+                        <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
+                        <option data-icon="currency-flag currency-flag-bdt mr-1" data-subtext="Bangladeshi taka" value="BDT">BDT</option>
+                        <option data-icon="currency-flag currency-flag-khr mr-1" data-subtext="Cambodian Riel" value="">KHR</option>
+                        <option data-icon="currency-flag currency-flag-cny mr-1" data-subtext="Chinese yuan" value="">CNY</option>
+                        <option data-icon="currency-flag currency-flag-idr mr-1" data-subtext="Indonesian rupiah" value="">IDR</option>
+                        <option data-icon="currency-flag currency-flag-lkr mr-1" data-subtext="Sri Lankan rupee" value="">LKR</option>
+                        <option data-icon="currency-flag currency-flag-myr mr-1" data-subtext="Malaysian ringgit" value="">MYR</option>
+                        <option data-icon="currency-flag currency-flag-npr mr-1" data-subtext="Nepalese rupee" value="">NPR</option>
+                        <option data-icon="currency-flag currency-flag-php mr-1" data-subtext="Philippine peso" value="">PHP</option>
+                        <option data-icon="currency-flag currency-flag-pkr mr-1" data-subtext="Pakistani rupee" value="">PKR</option>
+                        <option data-icon="currency-flag currency-flag-thb mr-1" data-subtext="Thai baht" value="">THB</option>
+                        <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnamese dong" value="">VND</option>
+                      </select>
+                      </span> </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="recepient input-group has-inline-header">
+                    <span class="inline-header">
+                      Recepient gets in <strong>Bangladesh</strong>
+                    </span>
+                    <input type="number" class="form-control" data-bv-field="recipientGets" id="recipientGets" value="1000.00">
+                    <div class="input-group-append"> <span class="input-group-text p-0">
+                      <select id="recipientCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" required="">
+                        <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
+                        <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="">INR</option>
+                        <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates dirham" value="">AED</option>
+                        <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
+                        <option data-icon="currency-flag currency-flag-bdt mr-1" data-subtext="Bangladeshi taka" value="BDT">BDT</option>
+                        <option data-icon="currency-flag currency-flag-khr mr-1" data-subtext="Cambodian Riel" value="">KHR</option>
+                        <option data-icon="currency-flag currency-flag-cny mr-1" data-subtext="Chinese yuan" value="">CNY</option>
+                        <option data-icon="currency-flag currency-flag-idr mr-1" data-subtext="Indonesian rupiah" value="">IDR</option>
+                        <option data-icon="currency-flag currency-flag-lkr mr-1" data-subtext="Sri Lankan rupee" value="">LKR</option>
+                        <option data-icon="currency-flag currency-flag-myr mr-1" data-subtext="Malaysian ringgit" value="">MYR</option>
+                        <option data-icon="currency-flag currency-flag-npr mr-1" data-subtext="Nepalese rupee" value="">NPR</option>
+                        <option data-icon="currency-flag currency-flag-php mr-1" data-subtext="Philippine peso" value="">PHP</option>
+                        <option data-icon="currency-flag currency-flag-pkr mr-1" data-subtext="Pakistani rupee" value="">PKR</option>
+                        <option data-icon="currency-flag currency-flag-thb mr-1" data-subtext="Thai baht" value="">THB</option>
+                        <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnamese dong" value="">VND</option>
+                      </select>
+                      </span> </div>
+                  </div>
+                </div>
+                <div class="content rate">
+                  Rate <strong>1 AUD = 1 BDT</strong>
+                </div>
+                <div class="content position-relative">
+                  <div class="">
+                   <div class="w-100 ">
+                    <span class="table-cell">Delivery Method:</span>
+
+                      <div class=" dropdown delivery-method quiqsend table-cell">
+                        <input name="pay-us-with" value="poli" type="hidden">
+                        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-fee="3.95" aria-haspopup="true" aria-expanded="false">
+                          Bank Deposit
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#" data-value="internet-bank-transfer" data-time="Instant">Urgent Local Deposit
+                          &nbsp;
+                            <span class="text-primary">$2.5</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-100 mt-2 clearfix">
+                      <span class="float-left">Delivery time:</span>&nbsp;
+
+                      <span class="delivery-time float-right font-weight-500">2-3 business days</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content pay-us-with position-relative">
+                  <span class="table-cell"> Pay us with: </span>
+
+                  <div class="dropdown pay-us-with quiqsend table-cell">
+                    <input name="pay-us-with" value="poli" type="hidden">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-fee="3.95">
+                      Poli
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#" data-value="poli" data-fee="3.95">Poli <span class="text-primary float-right">$3.95</span></a>
+                      <a class="dropdown-item" href="#" data-value="PayID" data-fee="0">PayID <span class="text-primary float-right">$0.00</span></a>
+                      <a class="dropdown-item" href="#" data-value="internet-bank-transfer" data-fee="1.95">Internet Bank Transfer <span class="text-primary float-right">$1.95</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group content">
+                  <div class="clearfix">
+                    <p class=" mb-1 float-left">Fee </p>
+                    <span class="fee font-weight-500 float-right"> 5 AUD</span>
+                  </div>
+                  <div class="clearfix">
+                    <p class="float-left mb-1">Total to Pay <br></p>
+                    <span class="total-to-pay font-weight-500 float-right">1009.95 AUD</span>
+                  </div>
+                </div>
+
+  <!--                  <button type="submit" class="w-50 btn btn-primary d-inline-block mt-4">Send Now</button>-->
+                <a href="send-2.html" class="w-50 btn btn-primary d-inline-block mt-4">Send Now</a>
+
+                <a href="#" class="w-45 float-right btn btn-secondary d-inline-block mt-4">Compare</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div><!-- /.content ENDs -->
+</div>
+<!-- Script --> 
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script> 
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
+<script src="js/theme.js"></script>
+<script>
+  
+  let paymentMethods = {
+    "BDT" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]},
+      {"Cash Pickup" : ["Instant", "$4.00"]},
+      {"bKash" : ["Instant", "$4.50"]},
+      {"Ezy Local Deposit" : ["2-3 business days", "$1.95"]},
+      {"Urgent Local Deposit" : ["0-1 business days", "$9.95"]}
+    ], 
+    "INR" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]},
+      {"Cash Pickup" : ["Instant", "$4.00"]}
+    ],
+    "PKR" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]},
+      {"Cash Pickup" : ["Instant", "$4.00"]},
+      {"eWallet" : ["Instant", "$4.50"]}
+    ],
+    "NPR" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]},
+      {"Cash Pickup" : ["Instant", "$4.00"]}
+    ],
+    "LKR" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]},
+      {"Cash Pickup" : ["Instant", "$4.00"]}
+    ],
+    "PHP" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]},
+      {"Cash Pickup" : ["Instant", "$4.00"]}
+    ],
+    "IDR" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]},
+      {"Cash Pickup" : ["Instant", "$4.00"]}
+    ],
+    "CNY" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]}
+    ],
+    "KHR" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]},
+      {"eWallet" : ["Instant", "$4.50"]}
+    ],
+    "MYR" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]}
+    ],
+    "THB" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]}
+    ],
+    "VND" : [
+      {"Bank Deposit" : ["2-3 business days", "$3.95"]},
+      {"Cash Pickup" : ["Instant", "$4.00"]}
+    ],
+    "AUD" : [
+      {"Urgent" : ["0-1 business days", "2.5%"]},
+      {"Standard" : ["3 business days", "1.5%"]},
+      {"Flexible" : ["15 business days", "0%"]}
+    ]
+  }
+  
+  var payUsWith = {
+    "Poli" : 3.95,
+    "PayID" : 0.00,
+    "Internet Bank Transfer" : 1.95
+  }
+$(document).ready(function(){
+  
+  let firstCurrency = $('.input-group.has-inline-header .bootstrap-select:first > select')[0];
+  let secondCurrency = $('.input-group.has-inline-header .bootstrap-select:last > select')[0];
+  
+  
+  // currency select change-handler
+  $('.input-group.has-inline-header .bootstrap-select > select').on('change', function(event){
+    
+    // Updating the Rate field (i.e. "1 AUD = 1 BDT")
+    let firstCurrencyName = firstCurrency.options[firstCurrency.selectedIndex].text;
+    let secondCurrencyName = secondCurrency.options[secondCurrency.selectedIndex].text;
+    
+    $('.content.rate > strong').text(`1 ${firstCurrencyName} = 1 ${secondCurrencyName}`);
+    $('.has-inline-header:first > span.inline-header > strong').text(firstCurrencyName);
+    $('.has-inline-header:last > span.inline-header > strong').text(secondCurrencyName);
+  })
+  
+  
+  // Populating delivery methods, when the recepient currency field is set
+  $(secondCurrency).on('change', function(event){
+    event.preventDefault();
+    
+    var selectedCurrency = secondCurrency.options[secondCurrency.selectedIndex].text;
+    
+    var deliveryMethods = paymentMethods[selectedCurrency];
+    
+    $('.delivery-method > .dropdown-menu > a').remove();
+    
+    // Populating delivery methods
+    for(var i = 0; i < deliveryMethods.length; i++) {
+      $('.delivery-method > .dropdown-menu').append(`
+        <a class="dropdown-item" href="#" data-time="${Object.values(deliveryMethods[i])[0][0]}">${Object.keys(deliveryMethods[i])[0]}
+                            &nbsp;
+                              <span class="text-primary float-right">${Object.values(deliveryMethods[i])[0][1]}</span>
+                            </a>`)
+    }
+    
+    $('delivery-time').text( $('.delivery-method > .dropdown-menu > a:first').data('time') );
+    $('.delivery-method > button').text( $('.delivery-method > .dropdown-menu > a:first').contents()[0].nodeValue.trim() )
+    
+    
+  });
+  
+  
+  // Delivery method change-handler
+  $('.delivery-method > .dropdown-menu').on('click', 'a', function(event){
+    event.preventDefault();
+    $('.delivery-time').text( $(event.currentTarget).data('time'));
+    $('.delivery-method > button').text( $(event.currentTarget).contents()[0].nodeValue.trim() );
+    
+    debugger;
+    // Extracting the fee from the nested span, converting to num, storing it
+    $('.delivery-method.dropdown > button').data('fee', Number($(event.currentTarget).children('span').text().substr(1)));
+    
+    updateFee();
+  })
+  
+  // triggering a currency-change on page-load, to dynamically populate delivery methods
+  $(secondCurrency).val('BDT');
+  $(secondCurrency).trigger('change');
+  
+  // Pay-us-with dropdown event handler
+  $('.pay-us-with .dropdown-menu > a').on('click', function(event){
+    event.preventDefault();
+    
+    $('.pay-us-with.dropdown > button').data('fee', $(event.target).data('fee'));
+    
+    $('.pay-us-with.dropdown > button')[0].innerText = event.currentTarget.firstChild.nodeValue.trim();
+    
+    updateFee()
+  });
+  
+  $('#youSend').on('change', function(event){
+    console.log('detected');
+    debugger;
+    $('#recipientGets').val($(event.currentTarget).val());
+    updateFee();
+  })
+  
+  $('#recipientGets').on('change', function(event){
+    console.log('detected');
+    debugger;
+    $('#youSend').val($(event.currentTarget).val());
+    updateFee();
+  })
+  
+  
+  // Updates the Fee and Total-to-Pay fields
+  function updateFee(){
+    
+    var fee = $('.pay-us-with.dropdown > button').data('fee') + $('.delivery-method.dropdown > button').data('fee');
+    //To-do? For Bangladesh-to-Australia transfers, calculate fee based on %
+    $('.fee').text(`${fee} AUD`);
+    $('.total-to-pay').text(`${fee + Number($('#recipientGets').val())}`);
+    debugger;
+  }
+})
+</script>
+</body>
+</html>

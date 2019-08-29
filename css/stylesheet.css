@@ -2950,6 +2950,13 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   min-width: 250px;
 }
 
+.margin-center {
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  background-color: #ffffff00;
+}
 .custom-select {
   background: none;
 }
@@ -2967,4 +2974,52 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   background-color: #75caff;
 }
 
+#main-wrapper {
+  background: #fff !important;
+}
+
+.box {
+  background-color: #f8f8f8;
+  border: 2px solid #f2f2f2;
+  padding: 2em;
+  text-align: center;
+  display: block;
+  color: gray;
+  transition: 0.2s linear background-color;
+}
+
+.box:hover {
+  background-color: #fafafa;
+  color: gray;
+}
+
+.box > span {
+  display: block;
+  font-weight: 400;
+}
+
+.box.disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.box.disabled > span:first-of-type {
+  color: #ccc;
+}
+
+.box > span:first-of-type {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  padding-top: 13px;
+  margin-bottom: 10px;
+  color: #50d0ff;
+}
+
+.box > span:first-of-type {
+  
+}
 /* Qasim's UI changes END */
