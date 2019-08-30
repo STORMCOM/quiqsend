@@ -3019,7 +3019,22 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   color: #50d0ff;
 }
 
-.box > span:first-of-type {
-  
+.text-lg {
+  font-size: 1.32em;
+}
+
+/*
+.details-table > hr {
+  border: 2px solid blue;
+}
+*/
+.details-table {
+  border: 1px solid #ccc;
+/*  max-width: 600px;*/
+  margin: 0 auto;
+}
+
+.details-table > div {
+  margin: 6px 0;
 }
 /* Qasim's UI changes END */

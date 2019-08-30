@@ -97,7 +97,7 @@
           <li class="breadcrumb-item" aria-current="page"><a href="send-1.html">Amount</a></li>
           <li class="breadcrumb-item"><a href="send-2.html">You</a></li>
           <li class="breadcrumb-item active"><a href="send-3.html">Recipient</a></li>
-          <li class="breadcrumb-item active">Review</li>
+          <li class="breadcrumb-item active"><a href="send-4.html">Review</a></li>
           <li class="breadcrumb-item active">Pay</li>
         </ol>
       </nav>  
@@ -106,43 +106,59 @@
   
   <div id="content">
     <div class="text-center">
-      <h3>Who are you sending money to?</h3>
-      
+      <h3>How would you like to pay?</h3>
     </div>
     <div class="row pb-5">
-      <div class="container"> 
-      <h5 class="page-header pb-2 mb-4 border-bottom">Your Address</h5>
-      <div class="row">
-      <div class="col-md-4">
-        <a href="#" class="myselfBtn box" data-toggle="modal" data-target="#myselfModal">
-        <span class="image">
-          <i class="fas fa-user-alt"></i>
-        </span>
-        <span>To myself</span>
-      </a>  
-      </div>
+      <div class="col-md-8">
+        
+      </div><!-- payment-options END -->
       
       <div class="col-md-4">
-        <a href="#" class="someoneBtn box" data-toggle="modal" data-target="#someoneModal">
-        <span class="image">
-          <i class="fas fa-user-alt"></i>
-        </span>
-        <span>To someone else</span>
-      </a>  
-      </div>
-      
-      <div class="col-md-4">
-        <a href="#" class="disabled box">
-        <span class="image">
-          <i class="far fa-hospital"></i>
-        </span>
-        <span>Business or charity</span>
-      </a>  
-      </div>
-      
-      
-      
-      </div>
+        <div class="details-table row">
+          <div class="col-sm-6">Transfer details</div>
+          <div class="col-sm-6 text-right"><a href="send-1.html">Edit</a></div>
+          <div class="col-sm-6">You send</div>
+          <div class="col-sm-6 text-right text-lg mb-2 mt-2">1,000 AUD</div>
+          <div class="col-sm-6">Fee (included):</div>
+          <div class="col-sm-6 text-right">-15.23 AUD</div>
+          <div class="col-sm-6">Amount we'll convert:</div>
+          <div class="col-sm-6 text-right">123 AUD</div>
+          <div class="col-sm-6">Guaranteed rate (48 hours)</div>
+          <div class="col-sm-6 text-right">59.4590 AUD</div>
+          <div class="col-sm-6">Sultana gets</div>
+          <div class="col-sm-6 text-right text-lg">58,549.40 AUD</div>
+          <div class="col-sm-6">Should arrive</div>
+          <div class="col-sm-6 text-right">by July 18</div>
+          <div class="col-sm-12">
+            <hr>  
+          </div>
+          
+          <div class="col-sm-6 pt-2">Recipient details</div>
+          <div class="col-sm-6 text-right"><a href="send-1.html">Change</a></div>
+          <div class="col-sm-6">Name</div>
+          <div class="col-sm-6 text-right">Sultana Nasrin</div>
+          <div class="col-sm-6">Bank name</div>
+          <div class="col-sm-6 text-right">ONE BANK LTD.</div>
+          <div class="col-sm-6">Branch name</div>
+          <div class="col-sm-6 text-right">RAMGANJ (LAKSHMIPUR)</div>
+          <div class="col-sm-6">Account number</div>
+          <div class="col-sm-6 text-right">0372050001759</div>
+          
+        </div><!-- /.details-table ENDs -->
+      </div><!-- Container -->
+    
+    
+      <div class="container">
+        
+        
+        <div class="form-group mt-5">
+          <label for="reference">Reference for Sultana</label>
+          <input type="text" class="form-control" id="reference" placeholder="Message to Sultana (only sent by email)">
+        </div>
+        
+        <a href="send-5.html" class="my-5 btn btn-primary btn-block">
+          Confirm and continue
+        </a>
       </div><!-- /.container ENDs -->
     </div>
 
