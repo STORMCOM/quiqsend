@@ -114,7 +114,7 @@
       <h5 class="page-header pb-2 mb-4 border-bottom">Your Address</h5>
       <div class="row">
       <div class="col-md-4">
-        <a href="#" class="box">
+        <a href="#" class="myselfBtn box" data-toggle="modal" data-target="#myselfModal">
         <span class="image">
           <i class="fas fa-user-alt"></i>
         </span>
@@ -123,7 +123,7 @@
       </div>
       
       <div class="col-md-4">
-        <a href="#" class="box">
+        <a href="#" class="someoneBtn box" data-toggle="modal" data-target="#someoneModal">
         <span class="image">
           <i class="fas fa-user-alt"></i>
         </span>
@@ -148,6 +148,94 @@
 
   </div><!-- /.content ENDs -->
   
+</div><!--/#main-wrapper ENDs-->
+
+<!-- Modal -->
+<div class="modal fade" id="myselfModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send to myself</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="fname">Full name of account holder</label>
+            <input type="text" class="form-control" id="fname" placeholder="Your full name">
+          </div>
+          
+          <h5 class="page-header pb-0 mt-0 mb-3 border-bottom">Bank Details</h5>
+          <div class="form-group col-md-12">
+            <label for="fname">Bank name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Please enter bank name">
+          </div>
+          
+          <div class="form-group col-md-12">
+            <label for="branchname">Branch name</label>
+            <input type="text" class="form-control" id="branchname" placeholder="Please enter branch name">
+          </div>
+          
+          <div class="form-group col-md-12">
+            <label for="accnum">Account number</label>
+            <input type="text" class="form-control" id="fname" placeholder="5060011118">
+          </div>
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="someoneModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send to someone else</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="theiremail">Their email</label>
+            <input type="text" class="form-control" id="theiremail" placeholder="email address">
+          </div>
+         
+          <div class="form-group col-md-12">
+            <label for="fname">Full name of account holder</label>
+            <input type="text" class="form-control" id="fname" placeholder="Their full name">
+          </div>
+          
+          <h5 class="page-header pb-0 mt-0 mb-3 border-bottom">Bank Details</h5>
+          <div class="form-group col-md-12">
+            <label for="fname">Bank name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Please enter bank name">
+          </div>
+          
+          <div class="form-group col-md-12">
+            <label for="branchname">Branch name</label>
+            <input type="text" class="form-control" id="branchname" placeholder="Please enter branch name">
+          </div>
+          
+          <div class="form-group col-md-12">
+            <label for="accnum">Account number</label>
+            <input type="text" class="form-control" id="fname" placeholder="5060011118">
+          </div>
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100">Confirm</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Script --> 
@@ -156,6 +244,11 @@
 <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script> 
 <script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
 <script src="js/theme.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.someoneBtn').trigger('click');
+  })
+</script>
 
 </body>
 </html>
