@@ -3037,4 +3037,9 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .details-table > div {
   margin: 6px 0;
 }
+
+#content.main-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
 /* Qasim's UI changes END */
