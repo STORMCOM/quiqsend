@@ -3007,7 +3007,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   color: #ccc;
 }
 
-.box > span:first-of-type {
+span.image {
   width: 50px;
   height: 50px;
   margin: 0 auto;
@@ -3041,5 +3041,87 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 #content.main-form {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.payment-options .form-check {
+  border: 1px solid #ddd;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.payment-options .form-check > label {
+  cursor: pointer;
+}
+
+.payment-options .form-check > label > span {
+  display: block;
+  padding: 2px 20px;
+}
+
+.payment-options .form-check-input {
+/*  position: relative;*/
+  margin-left: 4px;
+  margin-top: 13px;
+}
+
+.payment-options .form-check > label > div.title {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+  padding: 8px 20px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.payment-options .form-check > label {
+  padding-bottom: 8px;
+}
+
+.payment-options .form-check label {
+  width: 100%;
+}
+
+.poli {
+  max-width: 600px;
+}
+
+.poli img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.poli a {
+  0.8rem 0.8rem;
+}
+
+.details-table > div {
+  margin: 12px 0;
+}
+span.label {
+  color: #777;
+}
+
+span.value {
+  font-size: 1.3em;
+  display: block;
+}
+
+.all-done {
+  background-color: #17467c;
+  color: white;
+}
+
+.all-done-content, .all-done #main-wrapper {
+  background-color: #17467c !important;
+  color: white;
+}
+
+.all-done-content > i {
+  font-size: 10em;
+}
+
+.all-done-content > h3 {
+  color: white;
 }
 /* Qasim's UI changes END */
