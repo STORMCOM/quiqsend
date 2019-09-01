@@ -3124,4 +3124,38 @@ span.value {
 .all-done-content > h3 {
   color: white;
 }
+
+.summary .operator-image {
+  max-height: 16px;
+  position: relative;
+  top: 3px;
+}
+
+.summary > .country > i {
+  position: relative;
+  top: 3px;
+}
+
+.summary > div {
+  margin: 10px 0;
+}
+
+.plan {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  border-left: 10px solid #b1c0d4;
+  padding: 15px;
+  display: block;
+  color: #777;
+  margin-top: 20px;
+}
+
+a.plan:hover {
+  color: #777;
+}
+
+.plan > span {
+  display: block;
+}
+
 /* Qasim's UI changes END */
