@@ -161,15 +161,15 @@
           <div class="col-sm-6">You send</div>
           <div class="col-sm-6 text-right text-lg mb-2 mt-2">1,000 AUD</div>
           <div class="col-sm-6">Fee (included):</div>
-          <div class="col-sm-6 text-right">-15.23 AUD</div>
+          <div class="col-sm-6 text-right fee">-15.23 AUD</div>
           <div class="col-sm-6">Amount we'll convert:</div>
           <div class="col-sm-6 text-right">123 AUD</div>
           <div class="col-sm-6">Guaranteed rate (48 hours)</div>
           <div class="col-sm-6 text-right">59.4590 AUD</div>
           <div class="col-sm-6">Sultana gets</div>
-          <div class="col-sm-6 text-right text-lg">58,549.40 AUD</div>
+          <div class="col-sm-6 text-right text-lg total">58,549.40 AUD</div>
           <div class="col-sm-6">Should arrive</div>
-          <div class="col-sm-6 text-right">by July 18</div>
+          <div class="col-sm-6 text-right arrive-date">by July 18</div>
           <div class="col-sm-12">
             <hr>  
           </div>
@@ -306,7 +306,34 @@
 <script src="js/theme.js"></script>
 
 <script>
+  var fee = 5.95,
+      days = 0,
+      amount = 58534.17,
+      months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+  
   $(document).ready(function(){
+    
+    // Initially updating date text
+    updateDateText();
+    
+    $('.payment-options .form-check-input').on('click', function(event){
+      var fee = Number($(event.target).next().find('span:first').html().substr(7));
+      
+      days = ($(event.target)[0].value === "bank-transfer" ? 2 : 0);
+      updateDateText();
+      
+      var total = amount + fee;
+      
+      $('.total').text(`${numberWithCommas(total)} AUD`);
+    })
+    
+    function updateDateText(){
+      var date = new Date();
+      date.setDate(date.getDate() + days);
+      
+      $('.arrive-date').text(`by ${months[date.getMonth()]} ${date.getDate()}`);
+    }
+    
     
     // Continue button click event-handler
     $('.continue-payment').on('click', function(event){
@@ -318,6 +345,10 @@
       }
     })
   })
+  
+  function numberWithCommas(x) {
+    return x.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 </script>
 
 </body>

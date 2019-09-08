@@ -2852,6 +2852,17 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   margin-bottom: 0;
 }
 
+.send-receive-money .content.rate {
+  background-color: #ffdc00;
+}
+
+@media (max-width: 1000px) {
+  .send-receive-money .btn-primary {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .send-receive-money form > .form-group > .input-group > input, .send-receive-money form > .form-group > .input-group > .input-group-append > .input-group-text {
   border-bottom: 0 !important;
   border-radius: 0;
@@ -2914,7 +2925,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   min-width: 160px;
 }
 
-.quiqsend.dropdown > button:after, .custom-select:after {
+.quiqsend.dropdown > button:after, .send-receive-money .custom-select:after {
   border-left: 6px solid transparent !important;
   border-right: 6px solid transparent !important;
   border-top: 6px solid black !important;
@@ -2924,7 +2935,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   margin-top: 0 !important;
 }
 
-.quiqsend.dropdown > button:before, .custom-select:before {
+.quiqsend.dropdown > button:before, .send-receive-money .custom-select:before {
     width: 0;
     height: 0;
     content: '';
@@ -2957,7 +2968,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .breadcrumb {
   background-color: #ffffff00;
 }
-.custom-select {
+.send-receive-money .custom-select {
   background: none;
 }
 
@@ -2976,6 +2987,10 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 
 #main-wrapper {
   background: #fff !important;
+}
+
+#content.send2 .box {
+  min-height: 250px;
 }
 
 .box {
@@ -3047,6 +3062,19 @@ span.image {
   border: 1px solid #ddd;
   padding-left: 0;
   margin-bottom: 20px;
+}
+
+.payment-options .form-check-input {
+  visibility: hidden;;
+}
+
+.payment-options .form-check-input + label > .title {
+  transition: 0.1s linear background-color;
+}
+
+.payment-options .form-check-input:checked + label > .title {
+  background-color: #22b355;
+  color: white;
 }
 
 .payment-options .form-check > label {
@@ -3156,6 +3184,17 @@ a.plan:hover {
 
 .plan > span {
   display: block;
+}
+
+#loginForm {
+  margin-top: 150px !important;
+}
+
+#loginForm > .nav-tabs {
+  position: absolute;
+  left: 50%;
+/*  top: -50px;*/
+  transform: translateX(-50%);
 }
 
 /* Qasim's UI changes END */
