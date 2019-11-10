@@ -2925,6 +2925,44 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   min-width: 160px;
 }
 
+.delivery-method .quiqsend > button {
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.delivery-method .quiqsend.dropdown > button:after {
+  top: 9px;
+  right: -7px;
+}
+
+.delivery-method .quiqsend.dropdown > button:before {
+  top: 9px !important; 
+  right: -4px;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .delivery-method .quiqsend.dropdown > button {
+    min-width: 100%;
+/*    font-size: 0.8em;*/
+  }
+  
+  .delivery-method .quiqsend.dropdown {
+    width: 50%;
+  }
+}
+
+.delivery-method .quiqsend.dropdown {
+  position: static;
+}
+
+.delivery-method .quiqsend.dropdown > .dropdown-menu {
+  transform: none !important;
+  top: 20px !important;
+  left: -15px !important;
+  right: -16px !important;
+}
+
 .quiqsend.dropdown > button:after, .send-receive-money .custom-select:after {
   border-left: 6px solid transparent !important;
   border-right: 6px solid transparent !important;
@@ -3197,4 +3235,39 @@ a.plan:hover {
   transform: translateX(-50%);
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Full width dropdown */
+.dropdown.quiqsend.open {
+  position: static;
+}
+
+.dropdown.quiqsend.open .dropdown-menu {
+  display: table;
+  border-radius: 0px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.quiqsend .dropdown-menu > li {
+  display: table-cell;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  .dropdown.quiqsend .dropdown-menu > li {
+    display: block;
+  }
+}
+/* Full width dropdown ENDs */
+
 /* Qasim's UI changes END */
+

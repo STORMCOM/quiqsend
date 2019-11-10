@@ -110,7 +110,7 @@
           <div class="send-receive-money col-md-6 col-xl-5 my-auto">
             <ul class="nav nav-tabs nav-justified bg-white style-5 rounded-top" id="myTab" role="tablist">
               <li class="nav-item"> <a class="nav-link active" id="send-money-tab" data-toggle="tab" href="#send-money" role="tab" aria-controls="send-money" aria-selected="true">Send Money</a> </li>
-              <li class="nav-item"> <a class="nav-link" id="receive-money-tab" href="/send-airtime.html" role="tab" aria-controls="receive-money" aria-selected="false">Send Airtime/Data</a> </li>
+              <li class="nav-item"> <a class="nav-link" id="receive-money-tab" href="airtime-1.html" role="tab" aria-controls="receive-money" aria-selected="false">Send Airtime/Data</a> </li>
             </ul>
             <div class="tab-content p-4 bg-white rounded-bottom" id="myTabContent">
               <div class="tab-pane fade show active" id="send-money" role="tabpanel" aria-labelledby="send-money-tab">
@@ -172,12 +172,12 @@
                   <div class="content rate">
                     Rate <strong>1 AUD = 1 BDT</strong>
                   </div>
-                  <div class="content position-relative">
+                  <div class="content">
                     <div class="">
-                     <div class="w-100 ">
-                      <span class="table-cell">Delivery Method:</span>
+                     <div class="w-100 position-relative delivery-method clearfix">
+                      <span class="table-cell float-left">Delivery Method:</span>
                      
-                        <div class=" dropdown delivery-method quiqsend table-cell">
+                        <div class="float-right dropdown delivery-method quiqsend table-cell">
                           <input name="pay-us-with" value="poli" type="hidden">
                           <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-fee="3.95" aria-haspopup="true" aria-expanded="false">
                             Bank Deposit
@@ -192,8 +192,7 @@
                       </div>
                       
                       <div class="w-100 mt-2 clearfix">
-                        <span class="float-left">Delivery time:</span>&nbsp;
-                        
+                        <span class="float-left">Delivery time: <a href="#" class="delivery-info" data-toggle="tooltip" data-title="Delivery time details go over here. It'll be fast and swift. You'll love it!"><i class="fas fa-question-circle text-secondary"></i></a> </span>&nbsp;
                         <span class="delivery-time float-right font-weight-500">2-3 business days</span>
                       </div>
                     </div>
@@ -554,6 +553,17 @@
     "Internet Bank Transfer" : 1.95
   }
 $(document).ready(function(){
+  
+  $(function () {
+//    $('.delivery-info').popover({
+//      trigger: 'focus',
+//      container: 'body'
+//    })
+  })
+  
+  $('a[href="#"]').on('click', function(event){
+    event.preventDefault();
+  })
   
   let firstCurrency = $('.input-group.has-inline-header .bootstrap-select:first > select')[0];
   let secondCurrency = $('.input-group.has-inline-header .bootstrap-select:last > select')[0];
