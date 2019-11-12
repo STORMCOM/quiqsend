@@ -2952,6 +2952,10 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   }
 }
 
+.subtext {
+  font-size: 0.8em;
+}
+
 .delivery-method .quiqsend.dropdown {
   position: static;
 }
